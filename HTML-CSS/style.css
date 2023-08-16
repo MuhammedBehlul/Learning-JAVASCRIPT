@@ -1,0 +1,83 @@
+body {
+    background-color: lightblue;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+    padding: 15px;
+
+}
+
+.Header-Of-WebSite {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.First-Subject {
+    font-family: 'Monoton', cursive;
+    font-size: 25px;
+    color: rgba(127, 97, 210, 0.9);
+    margin-right: 20px;
+}
+
+.login-header {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.login-input input[type="text"],
+.login-pw input[type="password"],
+.login-button input[type="button"],
+.login-button input[type="date"] {
+    height: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Add this line */
+}
+
+.header-row {
+    margin-bottom: 5px;
+}
+
+/* Add margin-bottom to the login site */
+.login-button {
+    margin-bottom: 5px;
+}
+
+/* Add margin-bottom to each individual input element */
+.login-input input[type="text"],
+.login-pw input[type="password"],
+.login-date input[type="date"],
+.login-button input[type="button"] {
+    margin-bottom: 3px;
+}
+
+.login-button input[type="button"] {
+    background-color: rgba(127, 97, 210, 0.9);
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+
+.login-button input[type="button"]:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+
+}
+
+.login-button input[type="button"]:active {
+    opacity: 0.4;
+}
+
+#naber {
+    font-size: 300px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube Video Grid</title>
+    <style>
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .video {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+        }
+
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-grid">
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/3fumBcKC6RE" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/mw2kKyJu9gY" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/eeCahRCgOfI" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
