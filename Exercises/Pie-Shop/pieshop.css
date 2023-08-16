@@ -91,6 +91,11 @@ main {
     transition: background-color 0.2s, color 0.2s;
 }
 
+.pie-content button:hover {
+    background-color: #fff;
+    color: #7d0a5b;
+}
+
 .Contact-content {
     display: flex;
     flex-direction: column;
