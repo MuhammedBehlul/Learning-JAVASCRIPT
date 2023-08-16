@@ -1,0 +1,3 @@
+# Learning-JAVASCRIPT
+
+IT'S JUST TRAINING
