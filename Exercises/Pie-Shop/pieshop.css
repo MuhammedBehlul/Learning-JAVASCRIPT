@@ -29,6 +29,7 @@ main {
     display: block;
     width: 240px;
     margin-right: 20px;
+    margin-bottom: 10px;
     border: solid 1px #7d0a5b;
     border-radius: 10px;
     justify-content: center;
@@ -100,6 +101,17 @@ main {
 .pie-content button:hover {
     background-color: #fff;
     color: #7d0a5b;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    padding-left: 25px;
+}
+
+.contact-form div {
+    margin-bottom: 7px;
 }
 
 .Contact-content {

@@ -31,9 +31,40 @@
             <div class="Contact-content">
                 <h1>Contact Us</h1>
                 <p>We are always glad to hear from you!</p>
-                <p><b><a href="mailto:mubsimsek@gmail.com">Send us an email</a></b> and let us know how we can help make
-                    your occasion special.
-                </p>
+            </div>
+
+            <div class="contact-form">
+                <form action="contact.html">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div>
+                            <label for="YourName">Your Name:</label>
+                            <input type="text" name="YourName" id="">
+                        </div>
+                        <div>
+                            <label for="YourEmail">Your Email:</label>
+                            <input type="email" name="YourEmail" id="">
+                        </div>
+                        <div>
+                            <label for="YourPhoneNumber">Your Phone Number:</label>
+                            <input type="tel" name="YourPhoneNumber" id="">
+                        </div>
+                        <div>
+                            <label for="OkToConnect">Ok to connect me:</label>
+                            <input type="checkbox" name="OkToConnect" id="">by phone
+                            <input type="checkbox" name="OkToConnect" id="">by email
+                        </div>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your Feedback</legend>
+                        <label for="YourMessage">Your Message:</label>
+                        <div>
+                            <textarea name="YourMessage" id="" cols="50" rows="5"></textarea>
+                        </div>
+                    </fieldset>
+
+                </form>
             </div>
         </article>
 
