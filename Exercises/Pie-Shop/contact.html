@@ -48,6 +48,8 @@
                         <div>
                             <label for="YourPhoneNumber">Your Phone Number:</label>
                             <input type="tel" name="YourPhoneNumber" id="">
+                            <input type="radio" name="HomeOrWork" id="">Work
+                            <input type="radio" name="HomeOrWork" id="">Home
                         </div>
                         <div>
                             <label for="OkToConnect">Ok to connect me:</label>
@@ -56,11 +58,56 @@
                         </div>
 
                     </fieldset>
+                    <br />
                     <fieldset>
                         <legend>Your Feedback</legend>
                         <label for="YourMessage">Your Message:</label>
                         <div>
                             <textarea name="YourMessage" id="" cols="50" rows="5"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="FeedbackType">If have problem:</label>
+                            <select name="FeedbackType" id="" multiple="multiple" size="6">
+                                <optgroup label="Stores">
+                                    <option value="Web Store">Web Store</option>
+                                    <option value="Store">Store</option>
+                                </optgroup>
+                                <option value="Product">Product</option>
+                                <option value="Service">Service</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="YourRating">Your Rating:</label>
+                            <select name="YourRating" id="">
+                                <option value="1">1 - Poor</option>
+                                <option value="2">2 - Fair</option>
+                                <option value="3">3 - Good</option>
+                                <option value="4">4 - Very Good</option>
+                                <option value="5">5 - Excellent</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Severity">Severity:</label>
+                            <input type="range" name="Severity" id="">
+                        </div>
+
+                        <div>
+                            <label for="Favorite-Pies">Your Favorites:</label>
+                            <select name="Favorite-Pies" id="">
+                                <option value="Apple">Apple</option>
+                                <option value="Cherry">Cherry</option>
+                                <option value="Peach">Peach</option>
+                                <option value="Pecan">Pecan</option>
+                                <option value="Plum">Plum</option>
+                                <option value="Strawberry">Strawberry</option>
+                            </select>
+
+                        </div>
+                        <div>
+                            <input type="submit" value="Send">
+                            <input type="reset" value="Reset">
                         </div>
                     </fieldset>
 
