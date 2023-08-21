@@ -12,18 +12,43 @@ main {
     width: auto;
     min-height: 85%;
     padding-bottom: 4%;
-
 }
 
 main {
     min-height: 100vh;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 668px) {
     main {
         flex-direction: column;
     }
+
+    img {
+        width: 75%;
+    }
 }
+
+@media (max-width: 560px) {
+    main>aside {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    main>article {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media(max-width:426px) {
+    .contact-form form fieldset {
+        width: 400px;
+    }
+}
+
 
 fieldset {
     border-color: #7d0a5b;
@@ -39,6 +64,22 @@ fieldset legend {
 
 form input {
     border-radius: 10px;
+}
+
+aside img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 55px 55px;
+    max-width: 100%;
+}
+
+article {
+    display: block;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .pie {
@@ -154,6 +195,10 @@ form input {
     margin-bottom: 7px;
 }
 
+.contact-form form fieldset {
+    width: 50%;
+}
+
 .Contact-content {
     display: flex;
     flex-direction: column;
@@ -257,9 +302,8 @@ form input {
 .Home-concept img {
     display: block;
     margin: 10 15px;
-    padding-left: 20px;
     max-width: 100%;
-    min-width: 80vh;
+    min-width: 100%;
 
 }
 
@@ -295,18 +339,4 @@ form input {
 .footer-elements a:hover {
     color: #bbbbbb;
     text-decoration: underline;
-}
-
-
-aside img {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 55px 55px;
-    max-width: 100%;
-}
-
-article {
-    display: block;
-    width: 75%;
 }
