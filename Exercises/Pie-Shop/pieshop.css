@@ -24,8 +24,10 @@ main {
         flex-direction: column;
     }
 
-    img {
-        width: 75%;
+    main>article {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
 
@@ -35,11 +37,13 @@ main {
         align-items: center;
 
     }
+}
 
-    main>article {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+@media (max-width: 426px) {
+    .nav-link a {
+        font-size: 0.2rem;
+        margin-right: 5px;
+        line-height: 45px;
     }
 }
 
