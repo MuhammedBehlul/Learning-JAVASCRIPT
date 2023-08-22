@@ -47,12 +47,6 @@ main {
     }
 }
 
-@media(max-width:426px) {
-    .contact-form form fieldset {
-        width: 400px;
-    }
-}
-
 
 fieldset {
     border-color: #7d0a5b;
@@ -69,6 +63,9 @@ fieldset legend {
 form input {
     border-radius: 10px;
 }
+
+
+
 
 aside img {
     display: block;
@@ -100,8 +97,8 @@ article {
 
 .browse-our-pies {
     display: inline-block;
-    margin-left: 50px;
     justify-content: column;
+    margin-left: 50px;
     align-items: center;
     font-weight: 700;
     font-family: Roboto;
@@ -119,6 +116,19 @@ article {
 .browse-our-pies ul {
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 667px) {
+    aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .browse-our-pies {
+        margin-left: 0px;
+    }
 }
 
 .pie-lists {
@@ -223,6 +233,17 @@ article {
     margin: 8px;
 }
 
+@media(max-width:426px) {
+    .contact-form {
+        padding-left: 5px;
+    }
+
+    .contact-form form fieldset {
+        width: 400px;
+    }
+}
+
+
 .header-elements {
     display: flex;
     justify-content: start;
@@ -308,7 +329,6 @@ article {
     margin: 10 15px;
     max-width: 100%;
     min-width: 100%;
-
 }
 
 .browse-pies {
