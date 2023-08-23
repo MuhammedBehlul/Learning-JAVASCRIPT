@@ -64,9 +64,6 @@ form input {
     border-radius: 10px;
 }
 
-
-
-
 aside img {
     display: block;
     width: 200px;
@@ -104,7 +101,7 @@ article {
     font-family: Roboto;
     color: #7d0a5b;
     padding: 0 0 0 0;
-    text-align: center;
+    text-align: start;
     background: transparent;
     border-radius: 10px;
 }
@@ -242,7 +239,6 @@ article {
         width: 400px;
     }
 }
-
 
 .header-elements {
     display: flex;

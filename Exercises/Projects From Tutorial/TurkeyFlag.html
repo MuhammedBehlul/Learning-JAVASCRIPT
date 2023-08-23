@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Flag</title>
+    <style>
+        .flag {
+            width: 450px;
+            height: 300px;
+            background-color: red;
+            position: relative;
+        }
+
+        .moon {
+            position: absolute;
+            width: 170px;
+            height: 170px;
+            background-color: white;
+            top: 65px;
+            left: 75px;
+            border-radius: 50%;
+        }
+
+        .second-moon {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            background-color: red;
+            top: 15px;
+            left: 35px;
+            border-radius: 50%;
+        }
+
+        .star {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            top: 115px;
+            left: 220px;
+            content: "★";
+            font-size: 92px;
+            color: white;
+            -webkit-transform: rotate(-18deg);
+            -moz-transform: rotate(-18deg);
+            -o-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+            clip-path: polygon(50% 0%, 63% 37%, 100% 38%, 69% 59%, 81% 100%, 50% 75%, 19% 100%, 31% 59%, 0% 38%, 37% 37%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Turkish Flag Only Css</h1>
+    <div class="flag">
+        <div class="moon">
+            <div class="second-moon"></div>
+        </div>
+        <div class="star"></div>
+</body>
+
+</html>
