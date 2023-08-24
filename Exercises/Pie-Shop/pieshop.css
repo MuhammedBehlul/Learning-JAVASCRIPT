@@ -82,7 +82,7 @@ article {
 
 .pie {
     display: block;
-    width: 240px;
+    width: 250px;
     margin-right: 20px;
     margin-bottom: 10px;
     border: solid 1px #7d0a5b;
@@ -359,4 +359,17 @@ article {
 .footer-elements a:hover {
     color: #bbbbbb;
     text-decoration: underline;
+}
+
+@media (max-width: 540px) {
+    .pie {
+        margin-left: 30px;
+    }
+
+    .Home-texts p {
+        text-align: justify;
+        width: 100%;
+        padding-left: 0px;
+    }
+
 }
