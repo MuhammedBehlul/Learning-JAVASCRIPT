@@ -301,7 +301,6 @@ article {
     font-weight: 700;
     margin: 0;
     padding-top: 20px;
-
 }
 
 .Home-texts p {
@@ -345,7 +344,6 @@ article {
     left: 0;
     bottom: 0;
     right: 0;
-
     z-index: 100;
 }
 
@@ -384,4 +382,21 @@ article {
     .login-button {
         font-size: 0.8rem;
     }
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#moving-head {
+    animation-name: slidein;
+    animation-duration: 4s;
 }
