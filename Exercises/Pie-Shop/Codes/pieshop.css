@@ -276,7 +276,7 @@ article {
     justify-content: center;
     align-items: center;
     background-color: #7d0a5b;
-    width: 100px;
+    width: auto;
     height: 30px;
     border: solid 1px #fff;
     border-radius: 10px;
@@ -372,4 +372,16 @@ article {
         padding-left: 0px;
     }
 
+}
+
+@media (max-width: 440px) {
+    .nav-link a {
+        font-size: 1rem;
+        margin-right: 5px;
+        line-height: 45px;
+    }
+
+    .login-button {
+        font-size: 0.8rem;
+    }
 }
