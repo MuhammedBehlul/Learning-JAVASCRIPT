@@ -1,0 +1,115 @@
+body {
+
+    background:
+        repeating-linear-gradient(#F3F5C4 0,
+            #F3F5C4 3em,
+            #F19181 3em,
+            #F19181 6em),
+        repeating-linear-gradient(90deg,
+            #F9CB8F 0,
+            #F9CB8F 3em,
+            #3CBAC8 3em,
+            #3CBAC8 6em),
+        repeating-linear-gradient(45deg,
+            transparent 0,
+            transparent 6em,
+            #F19181 12em),
+        repeating-linear-gradient(-45deg,
+            transparent 0,
+            transparent 6em,
+            #F19181 12em);
+
+    background-blend-mode: multiply;
+
+}
+
+.main-contents {
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.Price-table {
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Price-table * {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.Price-table h2 {
+    font-size: 2rem;
+}
+
+.Price-table h1 {
+    font-size: 3rem;
+
+}
+
+button {
+    background-color: rgb(224, 110, 10);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: rgb(224, 110, 10);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#pricing1 {
+    background-color: azure;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#pricing2 {
+    background-color: azure;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#pricing3 {
+    background-color: azure;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media (max-width:750px) {
+    .main-contents {
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+    }
+
+    #pricing1 {
+        margin-left: 0;
+    }
+
+}
