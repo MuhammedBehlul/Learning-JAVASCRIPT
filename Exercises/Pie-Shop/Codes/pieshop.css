@@ -83,7 +83,7 @@ article {
 .pie {
     display: block;
     width: 250px;
-    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 10px;
     border: solid 1px #7d0a5b;
     border-radius: 10px;
@@ -140,6 +140,17 @@ article {
     padding-right: 0px;
     padding-top: 17px;
     width: 220px;
+}
+
+.pies-header {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    color: #7d0a5b;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 
