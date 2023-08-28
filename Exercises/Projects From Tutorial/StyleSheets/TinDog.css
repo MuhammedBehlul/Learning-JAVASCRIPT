@@ -1,0 +1,81 @@
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.deneme-header {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-size: 1.2rem;
+    gap: 35px;
+    align-items: center;
+    background-color: #ff4c68;
+    margin-bottom: 0px;
+}
+
+.deneme-background {
+    background-color: #ff4c68;
+}
+
+.deneme-background a {
+    color: white;
+}
+
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+}
+
+.profile-img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+#dog-image {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#pricing {
+    margin-top: 50px;
+
+}
+
+#testimonial {
+    background-color: lightgray;
+}
+
+#contact footer {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
