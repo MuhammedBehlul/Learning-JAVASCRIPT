@@ -247,11 +247,11 @@ article {
     }
 
     .Your-Message-Section {
-        width: 250px;
+        width: 270px;
     }
 
     .Your-Message-Section textarea {
-        width: 250px;
+        width: 270px;
     }
 
     .contact-form form fieldset {
@@ -317,6 +317,7 @@ article {
 
 .Home-texts h1 {
     display: block;
+    text-align: center;
     font-size: 55px;
     font-weight: 700;
     margin: 0;
@@ -383,7 +384,7 @@ article {
     display: flex;
     justify-content: end;
     align-items: center;
-
+    margin-top: 20px;
 }
 
 .feedback-buttons input {
