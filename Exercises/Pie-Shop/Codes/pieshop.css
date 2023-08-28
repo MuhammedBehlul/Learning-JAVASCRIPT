@@ -143,9 +143,8 @@ article {
 }
 
 .pies-header {
-    display: inline-block;
+    display: block;
     width: 100%;
-    height: 100%;
     margin-left: 20px;
     color: #7d0a5b;
     font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -244,11 +243,21 @@ article {
 @media(max-width:426px) {
     .contact-form {
         padding-left: 5px;
+
+    }
+
+    .Your-Message-Section {
+        width: 250px;
+    }
+
+    .Your-Message-Section textarea {
+        width: 250px;
     }
 
     .contact-form form fieldset {
-        width: 400px;
+        max-width: 200px;
     }
+
 }
 
 .header-elements {
@@ -368,6 +377,26 @@ article {
 .footer-elements a:hover {
     color: #bbbbbb;
     text-decoration: underline;
+}
+
+.feedback-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.feedback-buttons input {
+    width: 100px;
+    height: 22px;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    background-color: #7d0a5b;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 @media (max-width: 540px) {
