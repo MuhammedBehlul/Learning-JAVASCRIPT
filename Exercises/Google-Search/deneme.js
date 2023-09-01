@@ -1,6 +1,18 @@
-var name = prompt("What is your name");
-var cevaplar = name.slice(0, 1);
-var cevaplar_buyuk = cevaplar.toUpperCase();
-var cevap_devami = name.slice(1, name.length);
-cevap_devami = cevap_devami.toLowerCase();
-alert(cevaplar_buyuk + cevap_devami);
+function fibonacciGenerator(n) {
+    //Do NOT change any of the code above 👆
+    let array = [0, 1];
+
+    for (var i = 2; i < n; i++) {
+        nextValue = array[i - 1] + array[i - 2];
+        array.push(nextValue);
+    }
+
+
+    return array;
+
+
+    //Return an array of fibonacci numbers starting from 0.
+
+    //Do NOT change any of the code below 👇
+}
+fibonacciGenerator(5);
