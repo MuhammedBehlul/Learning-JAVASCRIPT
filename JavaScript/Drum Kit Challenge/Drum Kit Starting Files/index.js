@@ -12,7 +12,7 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
 
         soundPlay(this.innerHTML);
         buttonAnimation(this.innerHTML);
-
+        console.log(this.innerHTML);
     });
 
     document.addEventListener("keydown", function (event) {
