@@ -1,0 +1,579 @@
+body {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+section {
+    background-color: #fff;
+}
+
+p {
+    color: black;
+}
+
+.first-row .col-md-4 img {
+    border-radius: 50%;
+}
+
+
+#customCarousel {
+    padding: 100px;
+}
+
+.contact-section {
+    padding-top: 150px;
+    padding-bottom: 10px;
+}
+
+.contact-section-flexing {
+    display: flex;
+    justify-content: center;
+    background-color: #173751;
+    border-radius: 90px 0px 0px 0px;
+}
+
+.iletisim-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+    text-align: center;
+}
+
+.iletisim-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.iletisim-info h1 {
+    color: #00ff00;
+    font-size: 2.5rem;
+}
+
+.iletisim-info p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.iletisim-info-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    margin-top: 20px;
+
+}
+
+.cek-ve-halkgunu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cek-halkgunu-content,
+.halkgunu-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cek-information,
+.halkgunu-information {
+    position: absolute;
+    bottom: -90px;
+    right: 90px;
+    background-color: rgba(57, 62, 66);
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border-radius: 45px 0px 45px 0px;
+}
+
+.cek-halkgunu-content img,
+.halkgunu-content img {
+    width: 85%;
+    height: auto;
+    border-radius: 45px 0px 45px 0px;
+}
+
+.cek-information,
+.halkgunu-information {
+    width: auto;
+    max-width: 70%;
+
+}
+
+.cek-ve-halkgunu-sectionu {
+    padding-bottom: 100px;
+}
+
+
+.some-information {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 75px;
+    font-size: 1.4rem;
+}
+
+.ortaklar {
+    padding-bottom: 25px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ortaklar img {
+    margin-bottom: 15px;
+    margin-left: 65px;
+}
+
+.ortaklar-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    font-size: 1.4rem;
+    margin-bottom: 75px;
+    padding-bottom: 60px;
+}
+
+.ortaklar-information h6 {
+    text-align: center;
+}
+
+.ortaklar-information p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.magaza-calisma-saat {
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.ortaklar-texts {
+    text-align: center;
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.py-4 {
+
+    padding-left: 50px;
+    padding-bottom: 1.5rem !important;
+}
+
+#navbarNav .nav-item button {
+    margin: 0px 10px !important;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1rem;
+
+}
+
+.navbar-brand {
+    padding-left: 18px;
+}
+
+.main-header {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.nav-links {
+    padding-top: 40px;
+    max-width: 100%;
+}
+
+.nav-links .main-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+
+}
+
+.nav-links .main-links li a img {
+    width: 75%;
+    height: 75%;
+
+}
+
+.main-links li a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.online-siparis {
+    background-color: #4db848;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+}
+
+.haberdar-olun {
+    background-color: #e3be0a;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+}
+
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.carousel-item img {
+    height: 600px;
+
+}
+
+.carousel-item {
+    padding-top: 0px;
+}
+
+
+.carousel-inner {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.carousel-inner {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+
+}
+
+.mb-0,
+.ms3 {
+    color: white !important;
+}
+
+.social-icons {
+    margin-right: 40px;
+
+}
+
+.social-icons a i {
+    font-size: 24px;
+
+}
+
+
+.custom-carousel-image {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+footer {
+    margin-top: 40px;
+
+}
+
+.row {
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.row .col-6 h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.row .nav .nav-item a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-item a.nav-link {
+    color: white !important;
+}
+
+
+.nav-item:hover a.nav-link {
+    color: blue !important;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+
+@media (max-width : 750px) {
+    .row ul li img {
+        width: 70%;
+        height: 70%;
+
+    }
+
+    .main-links li a {
+        font-size: 15px;
+    }
+
+    .online-siparis {
+        width: 150px;
+        height: 40px;
+    }
+
+    .haberdar-olun {
+        width: 150px;
+        height: 40px;
+    }
+
+    .row .col-6 h5 {
+        font-size: 15px;
+    }
+
+    .row .nav .nav-item a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+    .row ul li img {
+        width: 75%;
+        height: 75%;
+    }
+
+    .row .nav .nav-item a {
+        font-size: 15px;
+    }
+
+    .some-information,
+    .ortaklar-information {
+        flex-direction: column;
+        /* Stack flex containers vertically */
+        align-items: center;
+        /* Center items vertically */
+        text-align: center;
+        /* Center text within containers */
+    }
+
+    .ortaklar img {
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+
+    .contact-section-flexing {
+        flex-direction: row;
+        /* Arrange elements side by side */
+    }
+
+    .iletisim-info,
+    .iletisim-photo {
+        flex: 1;
+        /* Equal distribution of space */
+        width: auto;
+        /* Reset width to auto */
+        padding: 20px;
+        /* Adjust padding for spacing */
+        text-align: center;
+        /* Center text within containers */
+    }
+
+    .iletisim-info h1 {
+        font-size: 2rem;
+        /* Reduce font size for the heading */
+    }
+
+    .iletisim-info p {
+        font-size: 1rem;
+        /* Reduce font size for the paragraph */
+    }
+
+    .iletisim-info-button {
+        padding-left: 0;
+        /* Reset padding-left */
+        margin-top: 0;
+        /* Reset margin-top */
+
+    }
+
+    .btn-lg {
+        font-size: 0.8rem !important;
+        /* Reduce button font size */
+    }
+
+    /* Reduce image size */
+    .iletisim-photo img {
+        max-width: 100%;
+        /* Adjust the image size */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+}
+
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+    .row ul li img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .some-information,
+    .ortaklar-information {
+        flex-direction: row;
+        /* Keep elements side by side */
+        align-items: center;
+        /* Center items vertically */
+        text-align: center;
+        /* Center text within containers */
+    }
+
+    .ortaklar img {
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+
+    .contact-section-flexing {
+        flex-direction: row;
+        /* Keep elements side by side */
+    }
+
+    .iletisim-info,
+    .iletisim-photo {
+        flex: 1;
+        /* Equal distribution of space */
+        width: auto;
+        /* Reset width to auto */
+        padding: 20px;
+        /* Adjust padding for spacing */
+        text-align: center;
+        /* Center text within containers */
+    }
+
+    .iletisim-photo img {
+        max-width: 70%;
+        /* Reduce the image width to 70% */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .ortaklar {
+        flex-direction: column;
+        /* Stack items vertically */
+        text-align: center;
+        /* Center text within each item */
+    }
+
+    .row {
+        padding-top: 50px;
+    }
+
+    .some-information,
+    .ortaklar-information {
+        flex-direction: column;
+        /* Stack flex containers vertically */
+        align-items: center;
+        /* Center items vertically */
+        text-align: center;
+        /* Center text within containers */
+    }
+
+    .ortaklar img {
+        margin-bottom: 15px;
+        margin-left: 25px;
+    }
+
+    .cek-information,
+    .halkgunu-information {
+        position: static;
+        /* Remove absolute positioning */
+        margin-top: 20px;
+        /* Increase margin for spacing */
+        font-size: 12px;
+
+    }
+
+    .btn-lg {
+        border-radius: 1px;
+        font-size: 12px !important;
+        width: 100%;
+    }
+
+    .contact-section-flexing {
+        flex-direction: column;
+        /* Arrange elements side by side */
+    }
+
+    .iletisim-info,
+    .iletisim-photo {
+        flex: 1;
+        /* Equal distribution of space */
+        width: auto;
+        /* Reset width to auto */
+        padding: 20px;
+        /* Adjust padding for spacing */
+        text-align: center;
+        /* Center text within containers */
+    }
+
+    .iletisim-info h1 {
+        font-size: 2rem;
+        /* Reduce font size for the heading */
+    }
+
+    .iletisim-info p {
+        font-size: 0.9rem;
+        /* Reduce font size for the paragraph */
+    }
+
+    .iletisim-info-button {
+        padding-left: 0;
+        /* Reset padding-left */
+        margin-top: 0;
+        /* Reset margin-top */
+    }
+
+    .btn-lg {
+        font-size: 1rem !important;
+        /* Reduce button font size */
+    }
+
+    /* Reduce image size */
+    .iletisim-photo img {
+        max-width: 100%;
+        /* Adjust the image size */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+}
