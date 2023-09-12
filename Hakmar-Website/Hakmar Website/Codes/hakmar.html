@@ -23,36 +23,52 @@
     <header class="py-3">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="hakmar.html"><img src="../Images/logo_hakmaravm.png" alt=""
-                        class="img-fluid" style="max-height: 70px;"></a>
+                <a class="navbar-brand" href="hakmar.html">
+                    <img src="../Images/logo_hakmaravm.png" alt="" class="img-fluid" style="max-height: 70px;">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link text-white" href="hakmar.html"
-                                style="font-size: 1.2rem; margin-right: 30px;">GÜNCEL İNDİRİMLER<i
-                                    class="ri-arrow-down-line"></i></a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white" href="hakmar.html"
+                                style="font-size: 1.2rem; margin-right: 30px;">
+                                GÜNCEL İNDİRİMLER <i class="ri-arrow-down-line"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">İndirim Bülteni</a>
+                                <a class="dropdown-item" href="#">Halk Günleri</a>
+                            </div>
+                        </li>
                         <li class="nav-item"><a class="nav-link text-white" href="hakmar.html"
                                 style="font-size: 1.2rem; margin-right: 30px;">MAĞAZALAR</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="hakmar.html"
                                 style="font-size: 1.2rem; margin-right: 30px;">BLOG</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="hakmar.html"
-                                style="font-size: 1.2rem;">KURUMSAL<i class="ri-arrow-down-line"></i></a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white" href="#" style="font-size: 1.2rem;">KURUMSAL <i
+                                    class="ri-arrow-down-line"></i></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Hakkımızda</a>
+                                <a class="dropdown-item" href="#">İnsan Kaynakları</a>
+                                <a class="dropdown-item" href="#">Alışveriş Çeki</a>
+                                <a class="dropdown-item" href="#">HAK'lı Müşteri</a>
+                                <a class="dropdown-item" href="#">Hizmet İlkeleri</a>
+                            </div>
+                        </li>
                         <!-- Place the buttons within the navbar-nav list -->
-                        <li class="nav-item"><button class="btn btn-success ml-4 mr-3" href="hakmar.html"><i
-                                    class="ri-shopping-cart-2-line"></i>
-                                ONLINE SİPARİŞ</button></li>
+                        <li class="nav-item"><button id="button-online-siparis" class="btn btn-success ml-4 mr-3"
+                                href="hakmar.html"><i class="ri-shopping-cart-2-line"></i> ONLINE SİPARİŞ</button></li>
                         <!-- Add a gap of 10 pixels between the buttons -->
-                        <li class="nav-item"><button class="btn btn-warning ml-3 mr-3" href="hakmar.html"><i
-                                    class="ri-mail-volume-line"></i> HABERDAR
-                                OLUN</button></li>
+                        <li class="nav-item"><button id="button-haberdar" class="btn btn-warning ml-3 mr-3"
+                                href="hakmar.html"><i class="ri-mail-volume-line"></i> HABERDAR OLUN</button></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
 
 
     <main class="container">
