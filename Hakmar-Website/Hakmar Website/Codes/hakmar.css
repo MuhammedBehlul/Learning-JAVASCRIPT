@@ -24,6 +24,10 @@ p {
     z-index: 1;
 }
 
+.right-dropdown {
+    right: 40px;
+}
+
 .navbar-nav .dropdown .dropdown-menu a {
     color: black;
     padding: 12px 16px;
@@ -282,17 +286,14 @@ p {
 }
 
 .carousel-item img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
 .carousel-item {
     padding-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
+
 }
 
 
@@ -478,6 +479,10 @@ footer {
         /* Maintain aspect ratio */
     }
 
+    .right-dropdown {
+        left: 0;
+    }
+
 }
 
 
@@ -617,4 +622,10 @@ footer {
         height: auto;
         /* Maintain aspect ratio */
     }
+
+    .right-dropdown {
+        left: 0;
+        width: 100px;
+    }
+
 }
