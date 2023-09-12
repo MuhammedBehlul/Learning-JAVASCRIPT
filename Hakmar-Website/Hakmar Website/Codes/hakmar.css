@@ -58,7 +58,7 @@ p {
 
 
 #customCarousel {
-    padding: 100px;
+    padding: 100px 100px 20px 100px;
 }
 
 .contact-section {
@@ -160,6 +160,7 @@ p {
     justify-content: space-around;
     align-items: center;
     padding-top: 75px;
+    padding-bottom: 75px;
     font-size: 1.4rem;
 }
 
