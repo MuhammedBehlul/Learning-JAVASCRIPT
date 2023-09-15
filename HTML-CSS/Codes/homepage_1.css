@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content h1,
+.main-content p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-page {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/GlenariffForest.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+
+.navbar ul li::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: #00fe19;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li:not(:hover)::after {
+    width: 0;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.my-logo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.main-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+.main-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    margin: 20px auto;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px #00fe19 solid;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #00fe19;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.5s ease-in-out;
+}
+
+button:hover span {
+    width: 100%;
+}
