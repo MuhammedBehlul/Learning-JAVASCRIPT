@@ -173,7 +173,13 @@ button:hover span {
     transition: all 0.3s ease;
 }
 
+.close {
+    display: none;
+}
 
+.open {
+    display: block;
+}
 
 @media screen and (max-width: 1024px) {
     .main-content {

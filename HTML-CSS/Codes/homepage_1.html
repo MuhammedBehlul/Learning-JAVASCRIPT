@@ -37,7 +37,7 @@
                 <button><span></span>Explore</button>
             </div>
         </div>
-        <div class="dropdown-menu open">
+        <div class="dropdown-menu close">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Gallery</a></li>
@@ -55,9 +55,12 @@
             const isOpen = dropdownMenu.classList.contains('open');
             if (isOpen) {
                 toggleBar.innerHTML = '<i class="ri-close-line"></i>';
+                dropdownMenu.classList.add('open');
             } else {
                 toggleBar.innerHTML = '<i class="ri-menu-line"></i>';
+                dropdownMenu.classList.remove('open');
             }
+
         });
 
         closeBtn.addEventListener('click', () => {
