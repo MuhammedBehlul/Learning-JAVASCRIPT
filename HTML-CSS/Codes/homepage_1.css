@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .main-content h1,
 .main-content p {
     font-family: 'Roboto', sans-serif;
@@ -80,6 +84,7 @@
 
 .main-content {
     width: 100%;
+    padding-top: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,4 +136,89 @@ span {
 
 button:hover span {
     width: 100%;
+}
+
+.toggle-bar {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    margin-top: 25px;
+    ;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 90px;
+    right: 2rem;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    display: none;
+    transition: height cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .main-content {
+        padding-top: 100px;
+    }
+
+    .main-content h1 {
+        font-size: 3rem;
+    }
+
+    .main-content p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        padding-top: 150px;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .main-content h1 {
+        font-size: 3rem;
+    }
+
+    .main-content p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 150px;
+    }
+
+    .toggle-bar {
+        display: block;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
 }
