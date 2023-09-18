@@ -17,10 +17,10 @@
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </div>
             <div class="toggle-bar">
@@ -38,17 +38,17 @@
             </div>
         </div>
         <div class="dropdown-menu close">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </div>
     </div>
 
     <script>
         const toggleBar = document.querySelector('.toggle-bar');
         const dropdownMenu = document.querySelector('.dropdown-menu');
-        const closeBtn = document.querySelector('.dropdown-menu .close-button'); // Assuming you have a close button with a class 'close-button'
+        const closeBtn = document.querySelector('.dropdown-menu .close-button');
 
         toggleBar.addEventListener('click', () => {
             dropdownMenu.classList.toggle('open');

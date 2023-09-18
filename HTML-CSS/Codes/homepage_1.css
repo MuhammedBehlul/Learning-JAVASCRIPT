@@ -181,6 +181,12 @@ button:hover span {
     display: block;
 }
 
+@media (min-width: 768px) {
+    .open {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .main-content {
         padding-top: 100px;
