@@ -338,6 +338,11 @@ p {
     height: 200px;
 }
 
+.text-center {
+    text-align: center;
+    color: black;
+}
+
 
 
 footer {
@@ -484,6 +489,11 @@ footer {
         left: 0;
     }
 
+    .text-center {
+        text-align: center;
+        color: black;
+    }
+
 }
 
 
@@ -530,6 +540,11 @@ footer {
         /* Reduce the image width to 70% */
         height: auto;
         /* Maintain aspect ratio */
+    }
+
+    .text-center {
+        text-align: center;
+        color: black;
     }
 }
 
@@ -628,5 +643,11 @@ footer {
         left: 0;
         width: 100px;
     }
+
+    .text-center {
+        text-align: center;
+        color: black;
+    }
+
 
 }
