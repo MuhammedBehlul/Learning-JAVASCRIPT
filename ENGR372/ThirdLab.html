@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Calculator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0a0424fd;
+        }
+
+        .form-container {
+            background-image: url("./Images/w4BackgroundImage.jpg");
+            background-size: cover;
+            background-position: center;
+            border: 4px solid #ccc;
+            border-radius: 10px;
+            border-style: double;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+            width: 100%;
+        }
+
+        .form-container form {
+            width: 48%;
+        }
+
+        .form-container form label {
+            display: block;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .form-container form input[type="text"],
+        .form-container form select {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-container form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 20px;
+            width: 48%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Forex Calculator</h1>
+        <div id="result"></div>
+        <form id="currencyForm">
+            <label for="currency">Currency:</label>
+            <select id="currency" name="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">TRY</option>
+
+            </select>
+
+            <label for="transactionType">BUY/SELL:</label>
+            <select id="transactionType" name="transactionType" size="2">
+                <option value="buy">Buy</option>
+                <option value="sell">Sell</option>
+            </select>
+
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" placeholder="Enter amount" required>
+
+            <label for="paid">Paid:</label>
+            <input type="text" id="paid" name="paid" placeholder="Enter paid amount" required>
+
+            <input type="submit" value="Calculate" onclick="calculateResult()">
+        </form>
+
+
+    </div>
+
+    <script>
+        function calculateResult() {
+            var currency = document.getElementById('currency').value;
+            var transactionType = document.getElementById('transactionType').value;
+            var amount = parseFloat(document.getElementById('amount').value);
+            var paid = parseFloat(document.getElementById('paid').value);
+
+            var result = 0;
+
+            // Calculate result based on transaction type
+            if (transactionType === 'buy') {
+                result = amount * paid;
+            } else if (transactionType === 'sell') {
+                result = paid / amount;
+            }
+
+            document.getElementById('result').innerText = 'Result: ' + result + ' ' + currency;
+
+            // Clear the result after 5 seconds
+            setTimeout(function () {
+                document.getElementById('result').innerText = '';
+            }, 50000); // 5000 milliseconds = 5 seconds
+        }
+    </script>
+
+</body>
+
+</html>
