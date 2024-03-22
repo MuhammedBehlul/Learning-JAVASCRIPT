@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGR COFFEE SHOP Form</title>
+    <style>
+        body {
+            background-color: darkslategray;
+        }
+
+        table {
+            background-image: url("Images/w5.jpg");
+            border-collapse: collapse;
+            width: 800px;
+
+        }
+
+        th,
+        td {
+            border: 1px solid gold;
+            padding: 8px;
+            text-align: left;
+        }
+
+        h2 {
+            color: gold;
+        }
+
+        .gold-label {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td colspan="2" style="text-align:center;">
+                <h2>ENGR COFFEE SHOP</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="gold-label">Beverage</td>
+            <td>
+                <select name="beverage">
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="coffee">Flat white</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="gold-label">Cup Size</td>
+            <td style="color: white;">
+                <input type="checkbox" name="cupsize" value="regular"> Regular
+                <input type="checkbox" name="cupsize" value="grande"> Grande
+                <input type="checkbox" name="cupsize" value="extra"> Extra
+            </td>
+        </tr>
+        <tr>
+            <td class="gold-label">Cups</td>
+            <td>
+                <input type="number" name="cups" min="1" max="5">
+            </td>
+        </tr>
+        <tr>
+            <td class="gold-label">Caramel</td>
+            <td>
+                <input type="checkbox" name="caramel">
+            </td>
+        </tr>
+        <tr>
+            <td class="gold-label">Paid</td>
+            <td>
+                <input type="text" name="paid">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center;">
+                <button type="button" onclick="calculate()">Calculate</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function calculate() {
+            // Write your calculation logic here
+            alert("Calculating...");
+        }
+    </script>
+
+</body>
+
+</html>

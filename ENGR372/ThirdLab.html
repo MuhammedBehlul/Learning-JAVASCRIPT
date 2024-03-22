@@ -83,13 +83,12 @@
     <div class="form-container">
         <h1>Forex Calculator</h1>
         <div id="result"></div>
-        <form id="currencyForm">
+        <form id="currencyForm" onsubmit="calculateResult(event)">
             <label for="currency">Currency:</label>
             <select id="currency" name="currency">
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
-                <option value="GBP">TRY</option>
-
+                <option value="GBP">GBP</option>
             </select>
 
             <label for="transactionType">BUY/SELL:</label>
@@ -102,39 +101,58 @@
             <input type="text" id="amount" name="amount" placeholder="Enter amount" required>
 
             <label for="paid">Paid:</label>
-            <input type="text" id="paid" name="paid" placeholder="Enter paid amount" required>
-
-            <input type="submit" value="Calculate" onclick="calculateResult()">
+            <input type="text" id="paid" name="paid" placeholder="Enter paid amount">
+            <input type="submit" value="Calculate">
         </form>
-
-
     </div>
 
     <script>
-        function calculateResult() {
-            var currency = document.getElementById('currency').value;
-            var transactionType = document.getElementById('transactionType').value;
+        function calculateResult(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+
+            var targetCurrency = document.getElementById('currency').value.toUpperCase();
+            var transactionAction = document.getElementById('transactionType').value;
             var amount = parseFloat(document.getElementById('amount').value);
-            var paid = parseFloat(document.getElementById('paid').value);
 
             var result = 0;
 
-            // Calculate result based on transaction type
-            if (transactionType === 'buy') {
-                result = amount * paid;
-            } else if (transactionType === 'sell') {
-                result = paid / amount;
+            var usdBuyRate = 35.51;
+            var usdSellRate = 32.42;
+            var eurBuyRate = 32.41;
+            var eurSellRate = 35.57;
+            var gbpBuyRate = 0; // Placeholder for GBP buy rate (replace with actual value)
+            var gbpSellRate = 0; // Placeholder for GBP sell rate (replace with actual value)
+
+            // Calculate result based on transaction type and currency
+            if (targetCurrency === 'USD') {
+                if (transactionAction === 'buy') {
+                    result = amount * usdBuyRate;
+                } else if (transactionAction === 'sell') {
+                    result = amount * usdSellRate;
+                }
+            } else if (targetCurrency === 'EUR') {
+                if (transactionAction === 'buy') {
+                    result = amount * eurBuyRate;
+                } else if (transactionAction === 'sell') {
+                    result = amount * eurSellRate;
+                }
+            } else if (targetCurrency === 'GBP') {
+                if (transactionAction === 'buy') {
+                    result = amount * gbpBuyRate;
+                } else if (transactionAction === 'sell') {
+                    result = amount * gbpSellRate;
+                }
+            } else {
             }
 
-            document.getElementById('result').innerText = 'Result: ' + result + ' ' + currency;
+            document.getElementById('paid').value = result.toFixed(2);
 
-            // Clear the result after 5 seconds
+            // Clear the result after 10 seconds (optional)
             setTimeout(function () {
-                document.getElementById('result').innerText = '';
-            }, 50000); // 5000 milliseconds = 5 seconds
+                document.getElementById('paid').value = ''; // Clear the input field
+            }, 10000); // 10000 milliseconds = 10 seconds
         }
     </script>
-
 </body>
 
 </html>
