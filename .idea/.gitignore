@@ -5,7 +5,6 @@
 /dataSources/
 /dataSources.local.xml
 
-bunu gitignore dosyama yüklemeyi düşünüyorum >
 # Logs
 logs
 *.log
