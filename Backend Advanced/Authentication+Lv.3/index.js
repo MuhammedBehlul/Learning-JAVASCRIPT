@@ -13,6 +13,7 @@ const port = 3000;
 const saltRounds = 10;
 env.config();
 
+//Creating a session
 app.use(
   session({
     secret: process.env.SESSION_SECRET,
@@ -22,6 +23,7 @@ app.use(
   })
 );
 
+//Setting up the view engine
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
