@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, TextField, Button, MenuItem, FormControl, InputLabel, Select, FormHelperText } from '@mui/material';
 import './App.css';
 
 function Form({ fields, onSubmit, ...props }) {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Form gönderim işlemi burada yapılır
     onSubmit();
   };
 
@@ -26,6 +25,8 @@ function Form({ fields, onSubmit, ...props }) {
                 error={!!field.error}
                 helperText={field.error}
                 variant="outlined"
+                value={field.value}
+                onChange={field.onChange}
               />
             );
           }
@@ -59,23 +60,54 @@ function Form({ fields, onSubmit, ...props }) {
 }
 
 // Formu kullanma örneği
-const fields = [
-  { name: 'username', label: 'Kullanıcı Adı', type: 'text', placeholder: 'Kullanıcı adınızı girin', required: true },
-  { name: 'password', label: 'Şifre', type: 'password', placeholder: 'Şifrenizi girin', required: true },
-  {
-    name: 'role',
-    label: 'Rol Seçin',
-    type: 'select',
-    options: [
-      { value: 'user', label: 'Kullanıcı' },
-      { value: 'admin', label: 'Yönetici' }
-    ],
-  },
-];
-
 function App() {
+  const [formValues, setFormValues] = useState({
+    username: '',
+    password: '',
+    role: '',
+  });
+
+  const handleFieldChange = (fieldName) => (event) => {
+    setFormValues({
+      ...formValues,
+      [fieldName]: event.target.value,
+    });
+  };
+
+  const fields = [
+    { 
+      name: 'username', 
+      label: 'Kullanıcı Adı', 
+      type: 'text', 
+      placeholder: 'Kullanıcı adınızı girin', 
+      required: true,
+      value: formValues.username,
+      onChange: handleFieldChange('username')
+    },
+    { 
+      name: 'password', 
+      label: 'Şifre', 
+      type: 'password', 
+      placeholder: 'Şifrenizi girin', 
+      required: true,
+      value: formValues.password,
+      onChange: handleFieldChange('password')
+    },
+    {
+      name: 'role',
+      label: 'Rol Seçin',
+      type: 'select',
+      options: [
+        { value: 'user', label: 'Kullanıcı' },
+        { value: 'admin', label: 'Yönetici' }
+      ],
+      value: formValues.role,
+      onChange: handleFieldChange('role')
+    },
+  ];
+
   const handleFormSubmit = () => {
-    console.log("Form gönderildi!");
+    console.log("Form gönderildi!", formValues);
   };
 
   return (
