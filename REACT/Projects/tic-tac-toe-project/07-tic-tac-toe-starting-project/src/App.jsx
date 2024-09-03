@@ -35,9 +35,13 @@ function App() {
       const cTurn = gameTurns.find(turn => turn.row === c[0] && turn.cell === c[1]);
 
       if (aTurn && bTurn && cTurn && aTurn.player === bTurn.player && aTurn.player === cTurn.player) {
-        setWinner(aTurn.player);
-        return;
+      setWinner(aTurn.player);
+      return;
       }
+    }
+
+    if (gameTurns.length === 9) {
+      setWinner('draw');
     }
   }
 
