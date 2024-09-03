@@ -191,37 +191,40 @@ ol {
 }
 
 #game-over {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: fixed; /* Fixed to stay in the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for true center */
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 400px; /* Limit max width */
+  padding: 20px; /* Padding for content spacing */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(40, 38, 23, 0.95);
-  animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
+  background-color: rgba(40, 38, 23, 0.95); /* Background with opacity */
+  animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards; /* Animation effect */
+  z-index: 1000; /* High z-index to be on top of other elements */
 }
 
 #game-over h2 {
   font-family: 'Caprasimo', cursive;
-  font-size: 4rem;
+  font-size: 2.5rem; /* Adjust font size */
   text-align: center;
   color: #fcd256;
   margin: 0;
 }
 
 #game-over p {
-  font-size: 2rem;
+  font-size: 1.2rem; /* Adjust font size */
   text-align: center;
   color: #e1dec7;
 }
 
 #game-over button {
   display: block;
-  margin: 0 auto;
-  font-size: 1.5rem;
+  margin: 20px auto 0; /* Margin for spacing */
+  font-size: 1.2rem; /* Adjust font size */
   background: none;
   border: 2px solid #fcd256;
   color: #fcd256;
@@ -238,6 +241,8 @@ ol {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
 }
+
+
 
 #log {
   max-width: 20rem;
