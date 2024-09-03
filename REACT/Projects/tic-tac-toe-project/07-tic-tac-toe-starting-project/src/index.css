@@ -191,40 +191,38 @@ ol {
 }
 
 #game-over {
-  position: fixed; /* Fixed to stay in the viewport */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust for true center */
-  width: 80%; /* Adjust width for responsiveness */
-  max-width: 400px; /* Limit max width */
-  padding: 20px; /* Padding for content spacing */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(40, 38, 23, 0.95); /* Background with opacity */
-  animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards; /* Animation effect */
-  z-index: 1000; /* High z-index to be on top of other elements */
+  position: fixed; 
+  top: 35%;
+  left: 35%; 
+  transform: translate(-50%, -50%); 
+  width: 80%; 
+  height: 80%;
+  max-width: 30rem;
+  max-height: 20rem;
+  padding: 20px;
+  background-color: rgba(40, 38, 23, 0.95); 
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Diğer içeriklerin üstünde olmasını sağlar */
+  animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
 }
 
 #game-over h2 {
   font-family: 'Caprasimo', cursive;
-  font-size: 2.5rem; /* Adjust font size */
-  text-align: center;
+  font-size: 2.5rem;
   color: #fcd256;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 #game-over p {
-  font-size: 1.2rem; /* Adjust font size */
-  text-align: center;
+  font-size: 1.5rem;
   color: #e1dec7;
+  margin-bottom: 2rem;
 }
 
 #game-over button {
-  display: block;
-  margin: 20px auto 0; /* Margin for spacing */
-  font-size: 1.2rem; /* Adjust font size */
+  font-size: 1.2rem;
   background: none;
   border: 2px solid #fcd256;
   color: #fcd256;
@@ -241,6 +239,8 @@ ol {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
 }
+
+
 
 
 
