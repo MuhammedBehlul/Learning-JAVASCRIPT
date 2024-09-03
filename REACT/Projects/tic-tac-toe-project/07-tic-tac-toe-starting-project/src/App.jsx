@@ -19,6 +19,10 @@ const WinConditions = [
 ];
 
 function App() {
+  const [players, setPlayers] = useState({ 
+    X: 'Player 1',
+    O: 'Player 2'
+  });
   const [currentPlayer, setCurrentPlayer] = useState('X');
   const [gameTurns, setGameTurns] = useState([]);
   const [winner, setWinner] = useState(null);
@@ -35,8 +39,8 @@ function App() {
       const cTurn = gameTurns.find(turn => turn.row === c[0] && turn.cell === c[1]);
 
       if (aTurn && bTurn && cTurn && aTurn.player === bTurn.player && aTurn.player === cTurn.player) {
-      setWinner(aTurn.player);
-      return;
+        setWinner(aTurn.player);
+        return;
       }
     }
 
@@ -55,6 +59,13 @@ function App() {
     });
   }
 
+  function handlePlayerNameChange(symbol, newName) {
+    setPlayers((prevPlayers) => ({
+      ...prevPlayers,
+      [symbol]: newName
+    }));
+  }
+
   function handleRestart() {
     setGameTurns([]);
     setCurrentPlayer('X');
@@ -65,15 +76,15 @@ function App() {
     <main>
       <div id="game-container">
         <ol id="players" className="highlight-player">
-          <Player initialName="Player 1" symbol="X" isActive={currentPlayer === 'X'} />
-          <Player initialName="Player 2" symbol="O" isActive={currentPlayer === 'O'} />
+          <Player initialName="Player 1" symbol="X" isActive={currentPlayer === 'X'} onChangeName={handlePlayerNameChange} />
+          <Player initialName="Player 2" symbol="O" isActive={currentPlayer === 'O'} onChangeName={handlePlayerNameChange} />
         </ol>
         <div>
           <GameBoard turns={gameTurns} onSelectSquare={handleSelectSquare} />
         </div>
       </div>
       <Log turns={gameTurns} />
-      {winner && <GameOver winner={winner} onRestart={handleRestart} />}  {/* Conditionally render GameOver */}
+      {winner && <GameOver winner={winner} players={players} onRestart={handleRestart} />}  {/* Conditionally render GameOver */}
     </main>
   );
 }

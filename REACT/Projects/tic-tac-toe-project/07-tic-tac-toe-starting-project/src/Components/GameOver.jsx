@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function GameOver({ winner, onRestart }) {
+export default function GameOver({ winner, players, onRestart }) {
     if (!winner) return null;
 
     return (
@@ -12,8 +12,8 @@ export default function GameOver({ winner, onRestart }) {
                 </>
             ) : (
                 <>
-                    <h2>{`${winner} Wins!`}</h2>
-                    <p>Congratulations!</p>
+                    <h2>{`${players[winner]} Wins!`}</h2>
+                    <p>Congratulations {players[winner]}!</p>
                 </>
             )}
             <button onClick={onRestart}>Play Again</button>
