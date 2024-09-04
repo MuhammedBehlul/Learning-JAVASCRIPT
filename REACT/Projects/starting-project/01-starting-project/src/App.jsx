@@ -16,7 +16,7 @@ function App() {
   const handleChange = (name, value) => {
     setFormValues({
       ...formValues,
-      [name]: value
+      [name]: +value
     });
   };
 

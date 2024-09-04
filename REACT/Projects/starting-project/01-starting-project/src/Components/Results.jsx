@@ -7,7 +7,25 @@ export default function Results({ results }) {
     console.log(resultData);
 
     return (
-
-        <>Results...</>
+        <table id="result" className="center">
+            <thead className="center">
+                <tr>
+                    <th>Year</th>
+                    <th>Interest</th>
+                    <th>Value at Year End</th>
+                    <th>Annual Investment</th>
+                </tr>
+            </thead>
+            <tbody className="center">
+                {resultData.map((data) => (
+                    <tr key={data.year}>
+                        <td>{data.year}</td>
+                        <td>{data.interest}</td>
+                        <td>{data.valueEndOfYear}</td>
+                        <td>{data.annualInvestment}</td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
     );
 }
