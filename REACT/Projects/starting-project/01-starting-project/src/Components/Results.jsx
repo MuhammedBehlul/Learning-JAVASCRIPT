@@ -1,4 +1,4 @@
-import { calculateInvestmentResults } from "../util/investment";
+import { calculateInvestmentResults, formatter } from "../util/investment";
 
 export default function Results({ results }) {
 
@@ -19,10 +19,10 @@ export default function Results({ results }) {
             <tbody className="center">
                 {resultData.map((data) => (
                     <tr key={data.year}>
-                        <td>{data.year}</td>
-                        <td>{data.interest}</td>
-                        <td>{data.valueEndOfYear}</td>
-                        <td>{data.annualInvestment}</td>
+                        <td>{formatter.format(data.year)}</td>
+                        <td>{formatter.format(data.interest)}</td>
+                        <td>{formatter.format(data.valueEndOfYear)}</td>
+                        <td>{formatter.format(data.annualInvestment)}</td>
                     </tr>
                 ))}
             </tbody>

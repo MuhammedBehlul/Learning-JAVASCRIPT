@@ -13,6 +13,8 @@ function App() {
     duration: 10
   });
 
+  const inputValid = formValues.duration > 0;
+
   const handleChange = (name, value) => {
     setFormValues({
       ...formValues,
@@ -24,7 +26,8 @@ function App() {
     <>
       <Header />
       <Input formValues={formValues} onChange={handleChange} />
-      <Results results={formValues} />
+      {inputValid || <p className='center'>Please enter a valid duration</p>}
+      {inputValid && <Results results={formValues} />}
     </>
   );
 }
